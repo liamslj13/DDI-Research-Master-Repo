@@ -1,0 +1,46 @@
+# LaTeX Core build files
+*.aux
+*.bbl
+*.blg
+*.idx
+*.ind
+*.lof
+*.lot
+*.out
+*.toc
+*.xmpdata
+*.log
+
+# VS Code / latexmk specific files
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.synctex(busy)
+*.pdfsync
+
+# Bibliography and Glossary/Nomenclature (Biber/MakeIndex)
+*.bcf
+*.run.xml
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+*.nlo
+*.nls
+*.ilg
+
+# Document class specific (e.g., Beamer presentations)
+*.nav
+*.snm
+*.vrb
+
+# Code highlighting (Minted package)
+_minted-*/
+*.pyg
+
+# Note: *.pdf and *.tex are intentionally NOT ignored 
+# so they can be committed to your repository.

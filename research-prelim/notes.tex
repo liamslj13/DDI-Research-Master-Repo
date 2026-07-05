@@ -1,0 +1,51 @@
+% LaTeX starter template
+% Compile: `pdflatex notes.tex` or `latexmk -pdf notes.tex`
+\documentclass[11pt,a4paper]{article}
+
+% Encoding and fonts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% Page layout
+\usepackage{geometry}
+\geometry{margin=1in}
+
+% Math & graphics
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+
+% Bibliography and citations
+\usepackage{csquotes}
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{references.bib}
+
+% Hyperlinks
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+
+% =============================================================================
+%                               DOC STARTS HERE
+% =============================================================================
+
+
+
+
+% Document metadata
+\title{DDI Research Prelim Meeting Notes}
+\author{Liam Jay}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+
+\section{Example}
+Text
+
+% Example citation: \cite{example2020}
+\printbibliography
+
+\end{document}
+
