@@ -41,8 +41,32 @@
 \maketitle
 
 
-\section{Example}
-Text
+\section{What is DDI}
+DDI is described as the change in the effect of one drug due to the presence of one, or multiple other drugs. Present DDI can be classified into three main categories: Pharmaceutical (PC), Pharmacokinetic (PK), and Pharmacodynamic (PD).
+
+\section{Motivations}
+The number of approved drugs is increasing, and with this so is the number of potential drug-drug interactions within patients. The way that these drugs interact must be studied to ensure that adverse effects are minimized and that the drugs remain effective.
+Detection of DDI before clinical relies on \textit{in vitro} and \textit{in vivo} studies, which are time and labour expensive.
+
+\section{Common databases for DDI}
+Refer to Table 1 in \textit{"Comprehensive Review of Drug-Drug Interaction Prediction Based
+on Machine Learning: Current Status, Challenges, and Opportunities"}.
+
+
+
+
+
+\section{Current Challenges and Future Research Directions}
+
+\subsection{Lack of Gold-Standard Data Sets}
+Currently, only positive DDIs are labeled/collected for DDI prediction data sets. There may be some uncertain pairs that are labeled "false positive samples". However, there is still a lack of "Golden-Standard" data set for adverse DDIs. Researchers should work towards constructing this data set.
+
+\subsection{Supplement of Informative Attributes}
+There are a few issues to be improved: (1) 3D descriptors can provide steroscopic structural information (ie, illusion of depth created by overlaying images) which may lead to different results. 3D descriptors, however, rarely appear in DDI studies due to their computational complexity and time-consuming nature. (2) Many drug attributes can be collected \textbf{\textit{only}} after clinical trials or application. (3) There are still unknown yet important factors among DDIs to be uncovered. In the future, researchs may benefit from focus on extracting and integrating more information about drugs (ie, network topologies, semantic info etc) to find hidden rules and achieve improved DDI inference.
+
+\subsection{}
+
+
 
 % Example citation: \cite{example2020}
 \printbibliography
