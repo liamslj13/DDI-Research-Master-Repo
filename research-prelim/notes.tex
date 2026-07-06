@@ -64,7 +64,16 @@ Currently, only positive DDIs are labeled/collected for DDI prediction data sets
 \subsection{Supplement of Informative Attributes}
 There are a few issues to be improved: (1) 3D descriptors can provide steroscopic structural information (ie, illusion of depth created by overlaying images) which may lead to different results. 3D descriptors, however, rarely appear in DDI studies due to their computational complexity and time-consuming nature. (2) Many drug attributes can be collected \textbf{\textit{only}} after clinical trials or application. (3) There are still unknown yet important factors among DDIs to be uncovered. In the future, researchs may benefit from focus on extracting and integrating more information about drugs (ie, network topologies, semantic info etc) to find hidden rules and achieve improved DDI inference.
 
-\subsection{}
+\subsection{Optimization of Modeling Approaches}
+Models based on ML (especially deep learning) are usually regarded as "Black-Box" methods (ie, a system that processes inputs to generate an output; however, the underlying middle logic is hidden), and companies rely on them to make decisions. This requires good performance and also the interpretability of the model. A way to increase this interpretability is the \textbf{\textit{knowledge graph}} (KG). The inherent structure of KGs is easier for humans to understand than other ML decision methods. \\ 
+\\
+The performance of KG based models is extremely dependent on quality of the KG and selection of negative samples. There may also arise some noise when researchers use NLP to extract relationships from biomedical literature; some negative examples may actually be positive. Thus, it is important to improve the quality of the KG and optimize the negative sample generation strategy. This direction is promising.
+
+\subsection{Elaboration of Prediction Models}
+Most derived tools are binary-classification prediction models that only predict whether the two drugs will interact when taken together. Some issues that can be considered to obtain more practical DDI prediction models include: (1) Take into consideration administration method of the drugs (ie, orally, injected, applied externally etc), as this directly relates to how the drug comes into contact with other drugs. (2) Aim to obtain DDI inference models with a detailed endpoint (ie, DDI severity, DDI-induced changes in blood drug concentration, DDI mechanism of action, etc).
+
+\subsection{DDI Prediction for Multidrugs}
+Treatment regimes for complex or elderly cases often result in usage of multiple drugs at once. These drugs may interact with each other. This can result in a complex chain or network of interactions and increase the risk of adverse reactions. These types of DDI are called \textbf{\textit{high-order DDI}}. There are minimal studies reporting high-order DDI inference due to its complexity. This direction, however, is also promising.
 
 
 
